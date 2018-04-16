@@ -1,0 +1,105 @@
+body {
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #f4fbfd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 3px;
+}
+.button {
+    background-color: #55a79a; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #55a79a;
+}
+
+.button1:hover {
+    background-color: #55a79a;
+    color: white;
+}
+
+.option {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.input_text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    width: 400px;
+    height : 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+// Recaptcha
+.recaptcha-wrap {
+    position: relative;
+    height: 76px;
+    padding:1px 0 0 1px;
+    background:#222;
+    > div {
+        position: absolute;
+        bottom: 2px;
+        right:2px;
+        font-size:10px;
+        color:#ccc;
+    }
+}
+
+// Hides top border
+.recaptcha-wrap:after {
+    content:'';
+    display: block;
+    background-color: #222;
+    height: 2px;
+    width: 100%;
+    top: -1px;
+    left: 0px;
+    position: absolute;
+}
+
+// Hides left border
+.recaptcha-wrap:before {
+    content:'';
+    display: block;
+    background-color: #222;
+    height: 100%;
+    width: 2px;
+    top: 0;
+    left: -1px;
+    position: absolute;
+    z-index: 1;
+}
+
+// Makes it responsive & hides cut-off elements
+#g-recaptcha {
+    overflow: hidden;
+    height: 76px;
+    border-right: 60px solid #222222;
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #222;
+    position: relative;
+    box-sizing: border-box;
+    max-width: 294px;
+}

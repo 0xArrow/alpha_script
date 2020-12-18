@@ -1,7 +1,7 @@
 ****** Alpha Faucet Script ******
 
 
-Written by - alamin
+Written by - Remix
 
 
 For help, go to: https://bitcointalk.org/index.php?topic=1871667.0
